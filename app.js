@@ -6,6 +6,14 @@ const app = Vue.createApp({
             age: 35,
             likes: 20+'k'
         }
+    },
+    methods: {
+        updateTitle: function(){
+            this.title = "I am a man in the misor"
+        },
+        changeAuthor(author){
+            this.author = author
+        }
     }
 });
 

@@ -9,10 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <p>A book {{ title }} by {{ author }} who is {{ age }} has {{ likes }}.</p>
-        <button v-on:click="age++">Inc Age</button>
-        <button @click="updateTitle">Change title</button>
-        <button @click="changeAuthor('Kath Neron')">Change title</button>
+        <div v-show="displayBooks">
+            <p>A book {{ title }} by {{ author }} who is {{ age }} has {{ likes }}.</p>
+        </div>
+        <button @click="toogleBooks">
+            <span>{{ btn }}</span>
+        </button>
+
+        <div v-show="displayBooks">BOOKS DISPLAYED</div>
     </div>
     <script src="app.js"></script>
 </body>

@@ -1,5 +1,12 @@
 const app = Vue.createApp({
-    template: '<h2>Welcome to my view App</h2>'
+    data(){
+        return {
+            title: 'Kath Way City',
+            author: 'Zack Mutombo',
+            age: 35,
+            likes: 20+'k'
+        }
+    }
 });
 
 app.mount('#app');

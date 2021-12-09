@@ -6,7 +6,7 @@ const app = Vue.createApp({
             author: 'Zack Mutombo',
             age: 35,
             likes: 20+'k',
-            btn: 'Hide Books'
+            btn: 'Hide Books',
         }
     },
     methods: {
@@ -17,7 +17,7 @@ const app = Vue.createApp({
             } else {
                 this.btn = 'Hide Books'
             }
-        }
+        },
     }
 });
 

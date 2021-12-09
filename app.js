@@ -1,12 +1,11 @@
 const app = Vue.createApp({
     data(){
         return {
-            displayBooks: true,
-            title: 'Kath Way City',
-            author: 'Zack Mutombo',
-            age: 35,
-            likes: 20+'k',
-            btn: 'Hide Books',
+            books: [
+                {title: 'A la croisee de chemin', author: 'Zack', img: 'assets/1.jpg'},
+                {title: 'Une nuit de carnavale', author: 'Kath', img: 'assets/2.jpg'},
+                {title: 'Quand tu n\'est plus la', author: 'Neron', img: 'assets/1.jpg'},
+            ]
         }
     },
     methods: {

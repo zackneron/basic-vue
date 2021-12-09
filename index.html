@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3.0.2"></script>
     <title>Basic Vue</title>
+    <style>
+        .box {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-        <div v-show="displayBooks">
-            <p>A book {{ title }} by {{ author }} who is {{ age }} has {{ likes }}.</p>
+        <div class="box" v-for="book in books">
+            <img :src="book.img" :alt="book.title" />
+            <h3>{{ book.title}}</h3>
+            <p style="text-align: center;">{{ book.author }}</p>
         </div>
-        <button @click="toogleBooks">
-            <span>{{ btn }}</span>
-        </button>
-
-        <div v-show="displayBooks" style="margin-top: 10px;">BOOKS DISPLAYED</div>
     </div>
     <script src="app.js"></script>
 </body>

@@ -9,14 +9,6 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        toogleBooks(){
-            this.displayBooks = !this.displayBooks;
-            if(this.btn === 'Hide Books') {
-                this.btn = 'Show Books'
-            } else {
-                this.btn = 'Hide Books'
-            }
-        },
     }
 });
 
